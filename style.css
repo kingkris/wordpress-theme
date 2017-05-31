@@ -1,5 +1,5 @@
 /*
-Theme Name: b14test
+Theme Name: Portfolio
 Theme URI: http://www.dzineden.com/
 Author: KriShne Gowda
 Author URI: http://www.dzineden.com/
@@ -157,6 +157,17 @@ small, .font_small {font-size: 0.75em;}
 .icon-umbrella:before        {content: "\e904";}
 .icon-world-wide-web:before  {content: "\e90a";}
 
+.site-links li.ic-home a i:before     {content: "\f041";}
+.site-links li.ic-sp a i:before       {content: "\f270";}
+.site-links li.ic-blog a i:before     {content: "\e907";}
+.site-links li.ic-contact a i:before  {content: "\e909";}
+
+.social-links li.ic-fb a i:before     {content: "\f041";}
+.social-links li.ic-tw a i:before     {content: "\f270";}
+
+
+
+
 /*=====  End of Icon Fonts  ======*/
 
 .container{
@@ -196,14 +207,16 @@ small, .font_small {font-size: 0.75em;}
   background-color: #673ab7;
   border-bottom: solid 4px #ff4081;
 }
-.site-header h1{
+.site-header .logo a{
   color:#FFF;
   text-align: center;
   margin:0;
   padding:15px 0;
-  font-size: 2em;
+  font-size: .8em;
+  text-decoration: none;
+  display: block;
 }
-.site-header h1 small{
+.site-header .logo a small{
   display: block;
   font-family: 'Roboto', sans-serif;
   font-size:16px;

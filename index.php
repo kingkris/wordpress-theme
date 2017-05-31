@@ -12,7 +12,7 @@
  * @package b14test
  */
 
-get_header(); 
+get_header('xyz'); 
 
 
 ?>

@@ -9,12 +9,13 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
+ * Template Name: Services Template
  * @package b14test
  */
 
 get_header(); ?>
 
-<h1>page.php</h1>
+<h1>For contact page</h1>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

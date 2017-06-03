@@ -40,22 +40,23 @@
       <span></span>
       <span></span>
     </div><!-- /.hamburger -->
-    <nav>
-      <ul class="site-links">
-        <li class="active"><a href="#"><i class="icon-umbrella"></i><span> Home</span></a></li>
-        <li><a href="#"><i class="icon-trophy"></i><span> About me</span></a></li>
-        <li><a href="#"><i class="icon-shuttlecock"></i><span> Work</span></a></li>
-        <li><a href="#"><i class="icon-award"></i><span> Gallery</span></a></li>
-        <li><a href="#"><i class="icon-clipboard-move"></i><span> Blog</span></a></li>
-        <li><a href="#"><i class="icon-map-marker"></i><span> Hire me</span></a></li>
-      </ul>
-      <ul class="social-links">
-        <li><a href="#"><i class="icon-facebook"></i></a></li>
-        <li><a href="#"><i class="icon-pinterest"></i></a></li>
-        <li><a href="#"><i class="icon-google-plus"></i></a></li>
-        <li><a href="#"><i class="icon-linkedin"></i></a></li>
-        <li><a href="#"><i class="icon-amazon"></i></a></li>
-      </ul><!-- /.social-links -->
+    <nav  role="navigation">
+      <?php wp_nav_menu( array( 
+                                'theme_location' => 'menu-1', 
+                                'menu_id' => 'primary-menu',
+                                'menu_class' => 'site-links',
+                                'container' => false,
+                                'link_before' => '<i class="icon- "></i> '
+                              ) 
+                        ); ?>
+      <?php wp_nav_menu( array( 
+                                'theme_location' => 'menu-2', 
+                                'menu_id' => 'social-links',
+                                'menu_class' => 'social-links',
+                                'container' => false,
+                                'link_before' => '<i class="icon- "></i> '
+                              ) 
+                        ); ?>
     </nav><!-- eo nav -->
     <ul class="help-links">
       <li><a href="#"><i class="icon-clipboard-move"></i><span> Call me</span></a></li>

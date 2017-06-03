@@ -34,7 +34,7 @@
   <div class="container">
 		<?php
 			$description = get_bloginfo( 'description', 'display' );
-			if ( is_front_page() && is_home() ) : ?>
+			if ( is_front_page() || is_home() ) : ?>
 				<h1 class="logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<i class="icon-world-wide-web"></i> 
@@ -75,16 +75,6 @@
 																'link_before' => '<i class="icon- "></i> '
 															) 
 												); ?>
-<!-- 
-      <ul class="site-links">
-        <li class="active"><a href="#"><i class="icon-umbrella"></i><span> Home</span></a></li>
-        <li><a href="#"><i class="icon-trophy"></i><span> About me</span></a></li>
-        <li><a href="#"><i class="icon-shuttlecock"></i><span> Work</span></a></li>
-        <li><a href="#"><i class="icon-award"></i><span> Gallery</span></a></li>
-        <li><a href="#"><i class="icon-clipboard-move"></i><span> Blog</span></a></li>
-        <li><a href="#"><i class="icon-map-marker"></i><span> Hire me</span></a></li>
-      </ul>
--->
 			<?php wp_nav_menu( array( 
 																'theme_location' => 'menu-2', 
 																'menu_id' => 'social-links',
@@ -93,16 +83,6 @@
 																'link_before' => '<i class="icon- "></i> '
 															) 
 												); ?>
-<!-- 
-      <ul class="social-links">
-        <li><a href="#"><i class="icon-facebook"></i></a></li>
-        <li><a href="#"><i class="icon-pinterest"></i></a></li>
-        <li><a href="#"><i class="icon-google-plus"></i></a></li>
-        <li><a href="#"><i class="icon-linkedin"></i></a></li>
-        <li><a href="#"><i class="icon-amazon"></i></a></li>
-      </ul>/.social-links 
-
- -->
     </nav><!-- eo nav -->
     <ul class="help-links">
       <li><a href="#"><i class="icon-clipboard-move"></i><span> Call me</span></a></li>
